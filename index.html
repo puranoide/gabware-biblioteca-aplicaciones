@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppHub - Plataforma de Micro Servicios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+    <div class="animated-bg">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+    </div>
+
+    <!-- Fixed CTA Button -->
+    <div class="fixed-cta" id="fixedCta">
+        <a href="#apps" class="fixed-cta-button">
+            <span>Desliza para conocer nuestras apps</span>
+            <span class="fixed-cta-icon">👇</span>
+        </a>
+    </div>
+
+    <header>
+        <nav class="container">
+            <div class="logo">GappHub</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#plataforma">Plataforma</a></li>
+                <li><a href="#apps">Apps</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="container">
+            <h1>Bienvenido a GappHub</h1>
+            <p>El portafolio de aplicaciones para multiusos,donde encontraras soluciones para tus necesidades </p>
+            <a href="#apps" class="cta-button">Explorar Apps</a>
+        </div>
+    </section>
+
+    <section class="platform-info" id="plataforma">
+        <div class="container">
+            <div class="info-content">
+                <div class="info-text">
+                    <h2>Biblioteca de Aplicaciones</h2>
+                    <p>GappHubs es una biblioteca de aplicaciones moderna y escalable que te permite acceder a todas las herramientas que necesitas desde una sola interfaz intuitiva y centralizada.</p>
+                    <p>Descubre y explora todas las aplicaciones que se ajustan a tus necesidades y objetivos.</p>
+                    <p>Nuestra arquitectura basada en contenedores garantiza alta disponibilidad, fácil mantenimiento y despliegue continuo sin interrupciones.</p>
+                </div>
+                <div class="platform-image">
+                    <img src="assets/img/bibliotecadeapps.jpg" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="apps-section" id="apps">
+        <div class="container">
+            <h2>Nuestros Micro Servicios</h2>
+            
+            <!-- Filter Categories -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-category="all">Todas</button>
+                <button class="filter-btn" data-category="analytics">Analytics</button>
+                <button class="filter-btn" data-category="communication">Comunicación</button>
+                <button class="filter-btn" data-category="storage">Almacenamiento</button>
+                <button class="filter-btn" data-category="security">Seguridad</button>
+                <button class="filter-btn" data-category="integration">Integración</button>
+            </div>
+
+            <div class="apps-grid">
+                <div class="app-card" data-category="analytics">
+                    <div class="app-image"><img style="width: 100%;" src="assets/img/bibliotecadeapps.jpg" alt="" srcset=""></div>
+                    <div class="app-content">
+                        <h3>Analytics Pro</h3>
+                        <p>Analiza datos en tiempo real con dashboards interactivos. Obtén insights valiosos sobre tu negocio con visualizaciones avanzadas y reportes personalizados.</p>
+                        <a href="" style="color: aliceblue;">Visitar</a>
+                    </div>
+                </div>
+
+                <div class="app-card" data-category="communication">
+                    <div class="app-image">💬</div>
+                    <div class="app-content">
+                        <h3>Chat Connect</h3>
+                        <p>Sistema de mensajería instantánea para equipos. Comunícate eficientemente con canales, videollamadas y compartición de archivos en tiempo real.</p>
+                    </div>
+                </div>
+
+                <div class="app-card" data-category="storage">
+                    <div class="app-image">📦</div>
+                    <div class="app-content">
+                        <h3>Storage Cloud</h3>
+                        <p>Almacenamiento seguro en la nube con cifrado de extremo a extremo. Sincroniza archivos entre dispositivos y colabora con tu equipo sin límites.</p>
+                    </div>
+                </div>
+
+                <div class="app-card" data-category="security">
+                    <div class="app-image">🔐</div>
+                    <div class="app-content">
+                        <h3>Auth Manager</h3>
+                        <p>Gestión centralizada de autenticación y autorización. Implementa SSO, autenticación multifactor y control de acceso basado en roles.</p>
+                    </div>
+                </div>
+
+                <div class="app-card" data-category="communication">
+                    <div class="app-image">📧</div>
+                    <div class="app-content">
+                        <h3>Email Suite</h3>
+                        <p>Servicio de correo electrónico empresarial con filtros anti-spam. Crea campañas de marketing y automatiza tus comunicaciones profesionales.</p>
+                    </div>
+                </div>
+
+                <div class="app-card" data-category="integration">
+                    <div class="app-image">⚙️</div>
+                    <div class="app-content">
+                        <h3>API Gateway</h3>
+                        <p>Gestiona y monitorea todas tus APIs desde un solo lugar. Rate limiting, autenticación, documentación automática y métricas en tiempo real.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="container">
+            <p>&copy; 2025 <a href="https://gabware.com" target="_blank">gabware</a>. Todos los derechos reservados.</p>
+            <p>Plataforma de Micro Servicios de Nueva Generación</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
