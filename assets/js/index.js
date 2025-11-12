@@ -72,6 +72,7 @@ window.addEventListener('scroll', () => {
 const filterBtns = document.querySelectorAll('.filter-btn');
 const appCards = document.querySelectorAll('.app-card');
 
+
 filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         // Remove active class from all buttons
@@ -107,3 +108,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
